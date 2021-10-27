@@ -20,7 +20,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução à HTML e CSS
+##### [Bloco 3: Introdução à HTML e CSS](https://github.com/fhparreiras/trybe-exercicios/tree/master/trybe-exercicios/1-Fundamentos/bloco-03-introducao-a-html-e-css/3.1-html-css-estruturasde-pagina)
 
 - [x] 3-1: _Introdução - HTML & CSS_
 - [x] 3-1: _Estruturas de Página_
