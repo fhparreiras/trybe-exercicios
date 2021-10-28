@@ -1,0 +1,37 @@
+body{
+    font-size: 16px;
+}
+
+h1{
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+}
+
+p{
+    font-size: 3em;
+    font-weight: 600px;
+    text-align: center;
+}
+
+ul{
+    background-color: greenyellow;
+    line-height: 25px;
+}
+
+.p-ul{
+    background-color: burlywood;
+}
+
+#amarelo{
+    background-color: yellow;
+}
+
+#vermelho{
+    background-color: red;
+}
+
+#marrom{
+    background-color: brown;
+}
