@@ -15,13 +15,13 @@ p{
     text-align: center;
 }
 
+p, li{
+    background-color: burlywood;
+}
+
 ul{
     background-color: greenyellow;
     line-height: 25px;
-}
-
-.p-ul{
-    background-color: burlywood;
 }
 
 #amarelo{
