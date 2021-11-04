@@ -1,0 +1,137 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 60%;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+}
+header{
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+a:hover{
+    color: white;
+    background-color: #7C83F8;
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+table td, tr{
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 10px;
+}
+
+table{
+    margin: 0 auto 0 auto;
+}
+
+table caption{
+    font-weight: 800;
+    font-size: 11px;
+}
+
+h2,h3{
+    background-color: #FF3954;
+    max-width:fit-content;
+    border-radius: 5px 10px;
+    padding: 4px;
+}
+
+/* ID's */
+
+#nav-menu li{
+    display: inline;
+    margin-right: 20px;
+}
+
+#nav-menu ul{
+    margin-left: -40px;
+    margin-top: -5px;
+}
+
+#main{
+    background-color: #7C83F8;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+section#info, section#tabela{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 15px 0 45px;
+    text-align: center;
+}
+
+section#fato-1 p{
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+}
+
+section p{
+    padding: 5px;
+}
+
+#img-info{
+    padding: 0 15px 5px 5px;
+    border-radius: 50px;
+    width: 33%;
+    margin-right: 40px;
+}
+
+#fato-1{
+    text-align: justify;
+}
+
+#img-2{
+    width: 30%;
+    border-radius: 50px;
+    margin-left: 30px;
+}
+
+#img-3{
+    width: 40%;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+#rodape h5{
+    font-family:'Courier New', Courier, monospace;
+    margin-top: -5px;
+}
+
+#video{
+    max-width: 10%;
+    max-height: 200px;
+    background-color: red;
+    display: inline;
+    position: fixed;
+}
+
+#video a:hover{
+    background-color: red;
+    padding: 0;
+}
+
+section#references a,li{
+    color: #FF3954;
+    line-height: 30px;
+    list-style: square;
+}
+
+/* Classes */
+
+.realce{
+    font-weight: 700;
+    color: red;
+}
