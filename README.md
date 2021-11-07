@@ -32,4 +32,5 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### [Bloco 4: Introdução à JavaScript e Lógica de Programação](https://github.com/fhparreiras/trybe-exercicios/tree/master/trybe-exercicios/1-Fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao/4.1-introducao-javascript)
 
 - [x] 4-1: _Introdução - Javascript_
-
+- [x] 4-1: _Javascript - Primeiros passos_
+- [x] 4-2: _Javascript - Array e loop For_
