@@ -38,7 +38,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 4-4: _Javascript - Objetos e Funções_
 - [x] 4-5: _Projeto - Playground Functions_
 
-##### Bloco 5: Javascript: DOM, Eventos e Web Storage
+##### [Bloco 5: Javascript: DOM, Eventos e Web Storage](https://github.com/fhparreiras/trybe-exercicios/tree/master/trybe-exercicios/1-Fundamentos/bloco-05-javascript-dom-eventos-e-web-storage)
 
 - [x] 5-1: _Javascript - DOM e seletores_
 
