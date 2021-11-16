@@ -41,3 +41,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### Bloco 5: Javascript: DOM, Eventos e Web Storage
 
 - [x] 5-1: _Javascript - DOM e seletores_
+
