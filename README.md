@@ -41,4 +41,5 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### [Bloco 5: Javascript: DOM, Eventos e Web Storage](https://github.com/fhparreiras/trybe-exercicios/tree/master/trybe-exercicios/1-Fundamentos/bloco-05-javascript-dom-eventos-e-web-storage)
 
 - [x] 5-1: _Javascript - DOM e seletores_
+- [x] 5-2: _Javascript - Trabalhando com elementos_
 
