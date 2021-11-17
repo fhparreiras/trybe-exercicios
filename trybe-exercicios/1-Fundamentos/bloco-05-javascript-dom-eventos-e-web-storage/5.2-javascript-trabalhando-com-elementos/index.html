@@ -63,6 +63,12 @@ filhoDoFilho.innerText = "TESTE filhoDoFilho.";
 let teste = document.querySelector("#primeiroFilhoDoFilho").appendChild(filhoDoFilho);
 // A partir desse filho criado, acesse terceiroFilho .
 console.log(document.querySelector("h3").parentNode.parentNode.nextElementSibling);
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+pai.removeChild(primeiroFilho);
+pai.removeChild(terceiroFilho);
+pai.removeChild(quartoEUltimoFilho);
+elementoOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho);
+
 </script>
 </body>
 </html>
