@@ -24,6 +24,7 @@
 <script>
 
 // Exercício durante a aula 5.2
+// PARTE 1
 // Acesse o elemento elementoOndeVoceEsta .
 console.log(document.querySelector("#elementoOndeVoceEsta"));
 
@@ -45,6 +46,23 @@ console.log(document.querySelector("#elementoOndeVoceEsta").nextElementSibling);
 
 // Agora acesse o terceiroFilho a partir de pai .
 console.log(document.querySelector("#pai").firstElementChild.nextElementSibling.nextElementSibling);
+
+// PARTE 2
+// Crie um irmão para elementoOndeVoceEsta .
+let criaIrmao = document.createElement("section");
+criaIrmao.innerText = "teste exercício cria irmão";
+document.querySelector("#pai").appendChild(criaIrmao);
+// Crie um filho para elementoOndeVoceEsta .
+let criaFilho = document.createElement("p");
+criaFilho.innerText = "Testando exercício cria filho.";
+document.querySelector("#elementoOndeVoceEsta").appendChild(criaFilho);
+console.log(criaFilho.parentNode);
+// Crie um filho para primeiroFilhoDoFilho .
+let filhoDoFilho = document.createElement("h3");
+filhoDoFilho.innerText = "TESTE filhoDoFilho.";
+let teste = document.querySelector("#primeiroFilhoDoFilho").appendChild(filhoDoFilho);
+// A partir desse filho criado, acesse terceiroFilho .
+console.log(document.querySelector("h3").parentNode.parentNode.nextElementSibling);
 </script>
 </body>
 </html>
