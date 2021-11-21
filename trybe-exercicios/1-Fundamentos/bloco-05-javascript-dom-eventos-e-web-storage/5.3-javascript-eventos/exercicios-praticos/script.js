@@ -138,3 +138,16 @@ function zoomOut(evento){
 zoomIn();
 zoomOut();
 
+// Exercício 7
+
+function addTarefa(tarefa){
+  let task = document.createElement('span');
+  let espaco = document.createElement('br');
+  task.innerHTML = tarefa;
+  document.querySelector('.my-tasks').appendChild(task);
+  document.querySelector('.my-tasks').appendChild(espaco);
+}
+addTarefa('cozinhar');
+addTarefa('estudar');
+addTarefa('aula ao vivo');
+
