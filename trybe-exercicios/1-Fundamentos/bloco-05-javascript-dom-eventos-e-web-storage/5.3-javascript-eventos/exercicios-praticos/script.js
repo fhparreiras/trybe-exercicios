@@ -20,10 +20,12 @@ function createDaysOfTheWeek() {
     let data = document.createElement('li');
     data.className = 'day';
     data.innerHTML = dia;
-    if (dia == '24' || dia == '25' || dia == '31') {
+    if (dia == '24' || dia == '31') {
       data.classList.add('holiday');
-    } else if (dia == '4' || dia == '11' || dia == '18' || dia == '25') {
+    } else if (dia == '4' || dia == '11' || dia == '18') {
       data.classList.add('friday');
+    } else if (dia == '25') {
+      data.classList.add('friday', 'holiday');
     }
     document.querySelector('#days').appendChild(data);
   }
@@ -80,3 +82,28 @@ function addFriday(buttonName){
 
 addFriday('Sexta-Feira');
 
+// Exercício 5
+
+let countFriday = 0;
+
+function addEventoFriday(){
+  document.getElementById('btn-friday').addEventListener('click', function(){ 
+    for (dia of document.querySelectorAll('li')) {
+      if (dia.className.includes('friday')) {
+        dia.innerText = 'Sextou! MUFASA DAY';
+      }
+    }
+    countFriday += 1;
+    if (countFriday == 2) {
+      for (dia of document.querySelectorAll('li')) {
+        if (dia.className.includes('friday')) {
+          dia.style.backgroundColor = 'red';
+          countFriday = 0;
+        }
+      }
+    }
+    console.log(countFriday);
+  });
+}
+
+addEventoFriday();
