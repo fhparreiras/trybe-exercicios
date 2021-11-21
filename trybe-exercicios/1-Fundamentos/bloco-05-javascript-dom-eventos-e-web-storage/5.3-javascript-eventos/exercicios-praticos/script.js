@@ -140,12 +140,15 @@ zoomOut();
 
 // Exercício 7
 
-function addTarefa(tarefa){
+function addTarefa(tarefa, cor){
   let task = document.createElement('span');
   task.innerHTML = tarefa;
   document.querySelector('.my-tasks').appendChild(task);
+  addLegenda (cor);
 }
-addTarefa('aula ao vivo');
+addTarefa('aula ao vivo', 'red');
+addTarefa('teste', 'green');
+addTarefa('cozinhar', 'blue');
 
 // Exercício 8
 
@@ -153,22 +156,44 @@ function addLegenda (cor){
   let div = document.createElement('div');
   div.className = 'task';
   div.style.backgroundColor = cor;
+  let espaco = document.createElement('br');
   document.querySelector('.my-tasks').appendChild(div);
+  document.querySelector('.my-tasks').appendChild(espaco);
 }
 
-addLegenda ('teal');
 
 // Exercício 9
+let countLegenda = 0;
 
 function selectTask(){
   let divTask = document.querySelector('.my-tasks');
+  let divList = document.querySelectorAll('.task');
   divTask.addEventListener('click', function(evento) {
-    if (evento.target.className === 'task') {
-    evento.target.classList.add('selected');
-    } else if (evento.target.className === 'task selected') {
-      evento.target.className = 'task';
-    }
+    
+      if (evento.target.className === 'task' && countLegenda < 1) {
+      evento.target.classList.add('selected');
+      evento.target.previousElementSibling.style.color = 'black';
+      countLegenda += 1;
+      } else if (evento.target.className === 'task selected') {
+        evento.target.className = 'task';
+        evento.target.previousElementSibling.style.color = 'rgb(119, 119, 119)';
+        countLegenda -= 1;
+      }
   })
 }
-
 selectTask();
+
+// Exercício 10
+
+function corDia(){
+  document.querySelector('#days').addEventListener('click', function(evento) {
+    if (document.querySelector('.selected') === null ) {
+      evento.target.style.color = 'rgb(119,119,119)';
+    } else if (evento.target.style.color === document.querySelector('.selected').style.backgroundColor){
+      evento.target.style.color = 'rgb(119,119,119)'; 
+    } else {
+      evento.target.style.color = document.querySelector('.selected').style.backgroundColor; 
+    }
+  });
+}
+corDia();
