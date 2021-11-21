@@ -142,12 +142,18 @@ zoomOut();
 
 function addTarefa(tarefa){
   let task = document.createElement('span');
-  let espaco = document.createElement('br');
   task.innerHTML = tarefa;
   document.querySelector('.my-tasks').appendChild(task);
-  document.querySelector('.my-tasks').appendChild(espaco);
 }
-addTarefa('cozinhar');
-addTarefa('estudar');
 addTarefa('aula ao vivo');
 
+// Exercício 8
+
+function addLegenda (cor){
+  let div = document.createElement('div');
+  div.className = 'task';
+  div.style.backgroundColor = cor;
+  document.querySelector('.my-tasks').appendChild(div);
+}
+
+addLegenda ('teal');
