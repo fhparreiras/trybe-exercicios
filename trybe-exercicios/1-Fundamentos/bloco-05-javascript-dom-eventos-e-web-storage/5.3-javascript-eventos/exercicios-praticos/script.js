@@ -67,3 +67,16 @@ function addEvento(){
 let count = 0;
 
 addEvento();
+
+// Exercício 4
+
+function addFriday(buttonName){
+  let buttonFriday = document.createElement('button');
+  buttonFriday.id = 'btn-friday';
+  buttonFriday.name = buttonName;
+  buttonFriday.innerText = buttonName;
+  document.querySelector('.buttons-container').appendChild(buttonFriday);
+}
+
+addFriday('Sexta-Feira');
+
