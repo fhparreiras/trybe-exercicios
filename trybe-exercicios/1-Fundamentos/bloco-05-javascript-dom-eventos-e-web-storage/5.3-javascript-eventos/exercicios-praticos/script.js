@@ -36,7 +36,34 @@ function addFeriado(Feriados){
   let buttonFeriado = document.createElement('button');
   buttonFeriado.id = 'btn-holiday';
   buttonFeriado.name = Feriados;
+  buttonFeriado.innerText = Feriados;
   document.querySelector('.buttons-container').appendChild(buttonFeriado);
 }
 
-addFeriado('Teste');
+addFeriado('Feriados');
+
+// Exercício 3
+
+function addEvento(){
+  document.getElementById('btn-holiday').addEventListener('click', function(){ 
+    for (dia of document.querySelectorAll('li')) {
+      if (dia.className.includes('holiday')) {
+        dia.style.backgroundColor = 'red';
+      }
+    }
+    count += 1;
+    if (count == 2) {
+      for (dia of document.querySelectorAll('li')) {
+        if (dia.className.includes('holiday')) {
+          dia.style.backgroundColor = 'rgb(238,238,238)';
+          count = 0;
+        }
+      }
+    }
+    console.log(count);
+  });
+}
+
+let count = 0;
+
+addEvento();
