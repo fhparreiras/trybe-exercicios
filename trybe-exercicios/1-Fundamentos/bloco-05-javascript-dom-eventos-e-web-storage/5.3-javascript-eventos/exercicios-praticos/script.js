@@ -119,5 +119,22 @@ function addEventoFriday(){
     }  
   });
 }
-
 addEventoFriday();
+
+// Exercício 6
+
+function zoomIn(){
+  document.querySelector('#days').addEventListener('mouseover', function(evento) {
+  evento.target.style.fontSize = '30px';
+  evento.target.style.cursor = 'default'; 
+});
+}
+
+function zoomOut(evento){
+  document.querySelector('#days').addEventListener('mouseout', function(evento) {
+  evento.target.style.fontSize = '20px'; 
+  });
+}
+zoomIn();
+zoomOut();
+
