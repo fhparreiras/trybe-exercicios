@@ -197,3 +197,24 @@ function corDia(){
   });
 }
 corDia();
+
+// Exercício Bônus
+
+function addCompromisso(){
+  
+  document.querySelector('#btn-add').addEventListener('click', function() {
+    let print = '';
+    for (let i = 1; i < 99; i +=1) {
+      
+      if (document.querySelector('#task-input').value == print) {
+        alert('ERRO! Nenhum caractere foi inserido.')
+        break;
+      }
+      print += ' '
+    }
+    
+    console.log(document.querySelector('#task-input').value.type);
+    console.log(document.querySelector('#task-input').value);
+  });
+}
+addCompromisso();
