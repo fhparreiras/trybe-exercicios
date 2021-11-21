@@ -50,7 +50,9 @@ function addEvento(){
   document.getElementById('btn-holiday').addEventListener('click', function(){ 
     for (dia of document.querySelectorAll('li')) {
       if (dia.className.includes('holiday')) {
-        dia.style.backgroundColor = 'red';
+        dia.style.backgroundColor = '#0984e3';
+        dia.style.color = 'white';
+        dia.style.borderRadius = '50px';
       }
     }
     count += 1;
@@ -58,6 +60,7 @@ function addEvento(){
       for (dia of document.querySelectorAll('li')) {
         if (dia.className.includes('holiday')) {
           dia.style.backgroundColor = 'rgb(238,238,238)';
+          dia.style.color = 'rgb(119, 119, 119)';
           count = 0;
         }
       }
@@ -85,24 +88,35 @@ addFriday('Sexta-Feira');
 // Exercício 5
 
 let countFriday = 0;
+let fridayList = [];
 
 function addEventoFriday(){
   document.getElementById('btn-friday').addEventListener('click', function(){ 
+    let texto = "MUFASA FRIDAY!";
+    
     for (dia of document.querySelectorAll('li')) {
-      if (dia.className.includes('friday')) {
-        dia.innerText = 'Sextou! MUFASA DAY';
+      if (dia.className.includes('friday') && dia.innerText !== texto) {
+        fridayList.push(dia.innerText); 
+        dia.innerText = texto;
+        dia.style.backgroundColor = '#00b894';
+        dia.style.color = 'white';
+        dia.style.borderRadius = '50px';
       }
     }
     countFriday += 1;
     if (countFriday == 2) {
+      let pos = 0;
       for (dia of document.querySelectorAll('li')) {
         if (dia.className.includes('friday')) {
-          dia.style.backgroundColor = 'red';
-          countFriday = 0;
+          dia.style.backgroundColor = 'rgb(238,238,238)';
+          dia.style.color = 'rgb(119, 119, 119)';
+          dia.innerText = fridayList[pos];
+          pos += 1;
+          }
         }
-      }
-    }
-    console.log(countFriday);
+        countFriday = 0;
+        fridayList = [];
+    }  
   });
 }
 
