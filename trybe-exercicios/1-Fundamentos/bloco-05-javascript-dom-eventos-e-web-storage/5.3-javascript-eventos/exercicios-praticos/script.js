@@ -157,3 +157,18 @@ function addLegenda (cor){
 }
 
 addLegenda ('teal');
+
+// Exercício 9
+
+function selectTask(){
+  let divTask = document.querySelector('.my-tasks');
+  divTask.addEventListener('click', function(evento) {
+    if (evento.target.className === 'task') {
+    evento.target.classList.add('selected');
+    } else if (evento.target.className === 'task selected') {
+      evento.target.className = 'task';
+    }
+  })
+}
+
+selectTask();
