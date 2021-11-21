@@ -15,11 +15,18 @@ function createDaysOfTheWeek() {
   
   // Exercício 1
 
-  //function criaDatas(){}
-  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  function criaDatas(dezDaysList){
   for (dia of dezDaysList) {
     let data = document.createElement('li');
+    data.className = 'day';
     data.innerHTML = dia;
+    if (dia == '24' || dia == '25' || dia == '31') {
+      data.classList.add('holiday');
+    } else if (dia == '4' || dia == '11' || dia == '18' || dia == '25') {
+      data.classList.add('friday');
+    }
     document.querySelector('#days').appendChild(data);
   }
-  
+}
+criaDatas([29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]);
+
