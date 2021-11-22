@@ -204,13 +204,17 @@ function addCompromisso(){
   document.querySelector('#btn-add').addEventListener('click', function() {
     let print = '';
     for (let i = 1; i < 99; i +=1) {
-      
       if (document.querySelector('#task-input').value == print) {
         alert('ERRO! Nenhum caractere foi inserido.')
         break;
       }
       print += ' '
     }
+    let inputCompromisso = document.createElement('li');
+    inputCompromisso.innerText = document.querySelector('#task-input').value;
+    document.querySelector('.task-list').appendChild(inputCompromisso);
+    document.querySelector('#task-input').value = '';
+
   });
 
   document.querySelector('#task-input').addEventListener('keypress', function(evento) {
@@ -222,9 +226,12 @@ function addCompromisso(){
       }
       print += ' '
     }
-    
-    console.log(document.querySelector('#task-input').value.type);
-    console.log(document.querySelector('#task-input').value);
+    if (evento.which == 13 && document.querySelector('#task-input').value !== print) {
+      let inputCompromisso = document.createElement('li');
+      inputCompromisso.innerText = document.querySelector('#task-input').value;
+      document.querySelector('.task-list').appendChild(inputCompromisso);
+      document.querySelector('#task-input').value = '';
+    }
   });
 }
 
