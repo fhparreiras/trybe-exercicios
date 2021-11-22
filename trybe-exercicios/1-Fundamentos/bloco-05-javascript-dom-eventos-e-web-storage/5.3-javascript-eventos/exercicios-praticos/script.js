@@ -201,7 +201,6 @@ corDia();
 // Exercício Bônus
 
 function addCompromisso(){
-  
   document.querySelector('#btn-add').addEventListener('click', function() {
     let print = '';
     for (let i = 1; i < 99; i +=1) {
@@ -212,9 +211,21 @@ function addCompromisso(){
       }
       print += ' '
     }
+  });
+
+  document.querySelector('#task-input').addEventListener('keypress', function(evento) {
+    let print = '';
+    for (let i = 1; i < 99; i +=1) { 
+      if (evento.which == 13 && document.querySelector('#task-input').value == print) {
+        alert('ERRO! Nenhum caractere foi inserido.')
+        break;
+      }
+      print += ' '
+    }
     
     console.log(document.querySelector('#task-input').value.type);
     console.log(document.querySelector('#task-input').value);
   });
 }
+
 addCompromisso();
