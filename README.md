@@ -47,3 +47,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-5: _Projeto Arte com Pixels_
 - [x] 5-6: _Projeto Lista de Tarefas_
 
+##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
+
+- [x] 6-1: _HTML & CSS - Forms_
