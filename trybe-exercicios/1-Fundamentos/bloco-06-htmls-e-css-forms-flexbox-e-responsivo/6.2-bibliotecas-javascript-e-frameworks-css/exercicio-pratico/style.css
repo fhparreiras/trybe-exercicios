@@ -1,8 +1,12 @@
-select {
-    width: 50px;
+body {
+    padding: 10px;
 }
 
-fieldset{
+h1 {
+    text-align: center;
+}
+
+fieldset {
     margin: 15px 0;
 }
 
@@ -14,13 +18,9 @@ fieldset{
     vertical-align: middle;
 }
 
-.label-estado{
-    width: 55px;
-}
-
 .descricao {
     width: 19%;
-    display: inline-block;
+    display: inline;
 }
 
 .inputs {
@@ -44,4 +44,8 @@ fieldset{
 
 #desc-cargo {
     inline-size: 100%;
+}
+
+#data-inicio{
+    width: 200px;
 }

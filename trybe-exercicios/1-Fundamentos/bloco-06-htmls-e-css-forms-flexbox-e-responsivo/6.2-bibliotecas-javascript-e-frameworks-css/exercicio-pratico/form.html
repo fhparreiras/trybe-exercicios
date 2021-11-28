@@ -4,97 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" type="text/html" href="dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="DatePickerX.min.js" defer></script>
     <script src="script.js" defer></script>
     <title>Currículo</title>
 </head>
 <body>
     <header>
-        <h1>Cadastro de Currículo</h1>
+        <h1 class="title">Cadastro de Currículo</h1>
     </header>
     <main>
         <form>
             <fieldset>
-                <div>
-                    <div class="labels">
-                        <label for="nome">Nome:</label>
-                    </div>
-                    <div class="inputs">
-                        <input id="nome" name="nome" value='' maxlength="40" required>
+                <div class="field">
+                        <label class="label" for="nome">Nome</label>
+                    <div class="control">
+                        <input id="nome" type="text" class="input is-rounded" name="nome" value='' maxlength="40" required>
                     </div>
                 </div>
-                <div>
-                    <div class="labels">
-                        <label for="email">E-mail:</label>
-                    </div>
-                    <div class="inputs">
-                        <input id="email" name="email" maxlength="50" required>
+                <div class="field"> 
+                        <label class="label" for="email">E-mail</label>
+                    <div class="control">
+                        <input id="email" class="input is-rounded" name="email" maxlength="50" required>
                     </div>  
                 </div>
-                <div>  
-                    <div class="labels">
-                        <label for="cpf">CPF:</label>
-                    </div>
-                    <div class="inputs">
-                        <input id="cpf" name="cpf" maxlength="11" required>
+                <div class="field">  
+                        <label class="label" for="cpf">CPF</label>
+                    <div class="control">
+                        <input id="cpf" class="input is-rounded" name="cpf" maxlength="11" required>
                     </div>    
                 </div>
-                <div>  
-                    <div class="labels">
-                        <label for="endereco">Endereço:</label>
-                    </div>
-                    <div class="inputs">
-                        <input id="endereco" name="endereco" maxlength="200" required>
+                <div class="field">  
+                        <label class="label" for="endereco">Endereço</label>
+                    <div class="control">
+                        <input id="endereco" class="input is-rounded" name="endereco" maxlength="200" required>
                     </div>    
                 </div>
-                <div>  
-                    <div class="labels">
-                        <label for="cidade">Cidade:</label>
-                    </div>
-                    <div class="inputs">
-                        <input id="cidade" name="cidade" maxlength="28" required>
-                    </div>    
-                    <div class="labels label-estado">
-                        <label for="estado">Estado:</label>
-                    </div>
-                    <div class="inputs">
-                        <select id="estado" name="estado" required></select>
-                    </div>    
+                <div class="field">  
+                        <label class="label" for="cidade">Cidade</label>
+                    <div class="control">
+                        <input id="cidade" class="input is-rounded" name="cidade" maxlength="28" required>
+                    </div> 
                 </div>
-                <div>
-                    <p>Tipo do Imóvel:</p>  
-                        <label for="tipo-1"><input type='radio' id="tipo-1" value="Casa"  name="tipo" required>Casa</label>
-                        <label for="tipo-2"><input type='radio' id="tipo-2" value="Apartamento"  name="tipo" required>Apartamento</label>
+                <div class="field">   
+                        <label class="label" for="estado">Estado</label>
+                    <div class="control">
+                        <div class="select is-rounded">
+                            <select id="estado" name="estado" required></select>
+                        </div>   
+                    </div>
+                </div> 
+                <div class="field">
+                    <label class="label">Tipo do Imóvel</label> 
+                        <div class="control"> 
+                            <input type='radio' id="tipo-1" value="Casa"  name="tipo" required><span>Casa</span>
+                            <input type='radio' id="tipo-2" value="Apartamento"  name="tipo" required><span>Apartamento</span>
+                        </div>
                 </div>                    
             </fieldset>
             <fieldset>
-                <div>
-                    <label for="resumo">Resumo do currículo:</label>
+                <div class="field">
+                    <label class="label" for="resumo">Resumo do currículo</label>
                 </div>
-                <div>
-                    <textarea id="resumo" maxlength="1000" required></textarea>
+                <div class="field">
+                    <textarea id="resumo" class="textarea input" maxlength="1000" required></textarea>
                 </div>
-                <div class="labels">
-                    <label for="cargo">Cargo:</label>
+                <div class="field">
+                    <label class="label" for="cargo">Cargo</label>
                 </div>
-                <div class="inputs">
-                    <input id="cargo" maxlength="40" required>
+                <div class="control">
+                    <input id="cargo" class="input is-rounded" maxlength="40" required>
                 </div>  
-                <div class="inputs-descricao">  
-                    <label for="desc-cargo">Descrição do Cargo:</label>
-                    <input id="desc-cargo" maxlength="500" required>
+                <div class="field">  
+                    <label class="label" for="desc-cargo">Descrição do Cargo</label>
                 </div> 
-                <div>
-                    <div class="labels">
-                        <label for="data-inicio">Data de início:</label>            
-                    </div>
-                    <div class="inputs">
-                        <input type="text" id="data-inicio" name="data-inicio" value="" placeholder="DD/MM/AAAA" required>
+                <div class="control">
+                    <input id="desc-cargo" class="input is-rounded" maxlength="500" required>
+                </div>
+                <div class="field">
+                    <label class="label" for="data-inicio">Data de início</label>            
+                </div>
+                    <div class="control">
+                        <input type="text" class="input is-rounded" id="data-inicio" name="data-inicio" value="" placeholder="DD/MM/AAAA" required>
                     </div> 
                 </div>
             </fieldset>
-            <button id='envia-dados' type="submit">Enviar</button> <button id='limpa-tudo'>Limpar</button>
+            <div class="field control">
+                <button id="envia-dados" class="button is-primary" type="submit">Enviar</button> <button id="limpa-tudo" class="button is-danger">Limpar</button>
+            </div>
         </form>
     </main>
     <div id="oculto" class="teste">
