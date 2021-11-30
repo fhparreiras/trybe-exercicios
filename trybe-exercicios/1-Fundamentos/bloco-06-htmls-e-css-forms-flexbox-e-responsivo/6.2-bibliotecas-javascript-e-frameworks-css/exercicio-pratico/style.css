@@ -1,0 +1,51 @@
+body {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    margin: 15px 0;
+}
+
+.labels {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    margin: 10px 0 10px 0;
+    vertical-align: middle;
+}
+
+.descricao {
+    width: 19%;
+    display: inline;
+}
+
+.inputs {
+    display: inline-block;
+    height: 20px;
+}
+
+.inputs-descricao {
+    width: 99%;
+}
+
+.teste{
+    display: none;
+}
+
+#resumo {
+    width: 99%;
+    min-height: 100px;
+}
+
+
+#desc-cargo {
+    inline-size: 100%;
+}
+
+#data-inicio{
+    width: 200px;
+}
