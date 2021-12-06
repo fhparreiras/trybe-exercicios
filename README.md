@@ -59,3 +59,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### [Bloco 7: Introdução à JavaScript ES6 e Testes Unitários](https://github.com/fhparreiras/trybe-exercicios/tree/master/trybe-exercicios/1-Fundamentos/bloco-07-introducao-a-javascript-es6-e-testes-unitarios)
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [x] 7-2: _JavaScript ES6 - Objects_
