@@ -45,7 +45,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-3: _Javascript - Eventos_
 - [x] 5-4: _Javascript - Web Storage_
 - [x] 5-5: _Projeto Arte com Pixels_
-- [x] 5-6: _Projeto Lista de Tarefas_
+- [x] 5-6: _[Projeto Lista de Tarefas](https://fhparreiras.github.io/to-do-list/index.html)_
+- [x] BÔNUS: _Projeto Meme Generator_
+- [x] BÔNUS: _Projeto Mistery Letter_
+- [x] BÔNUS: _Projeto Color Guess_
 
 ##### [Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo](https://github.com/fhparreiras/trybe-exercicios/tree/master/trybe-exercicios/1-Fundamentos/bloco-06-htmls-e-css-forms-flexbox-e-responsivo)
 
@@ -60,3 +63,5 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Objects_
+- [x] 7-3: _Primeiros passos em Jest_
+- [x] 7-4: _Projeto - JavaScript Testes Unitários_
